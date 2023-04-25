@@ -11,11 +11,10 @@
 
 # mt7921
 rm -rf package/kernel/mac80211
-rm -rf package/kernel/mt76
+rm -rf package/kernel/rtl8821cu
 rm -rf package/network/services/hostapd
 svn export https://github.com/DHDAXCW/openwrt-beta/trunk/package/kernel/mac80211 package/kernel/mac80211
 chmod a-x package/kernel/mac80211/Makefile
-svn export https://github.com/DHDAXCW/lede-rockchip/trunk/package/kernel/mt76 package/kernel/mt76
 svn export https://github.com/DHDAXCW/openwrt-beta/trunk/package/network/services/hostapd package/network/services/hostapd
 
 # alist
