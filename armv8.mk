@@ -142,7 +142,7 @@ define Device/friendlyarm_nanopi-r5s
   IMAGE/sysupgrade.img.gz := boot-common | boot-script rk356x | pine64-img | gzip | append-metadata
   DEVICE_PACKAGES := kmod-r8125 kmod-nvme kmod-scsi-core
 endef
-#TARGET_DEVICES += friendlyarm_nanopi-r5s
+TARGET_DEVICES += friendlyarm_nanopi-r5s
 
 define Device/friendlyarm_nanopi-r5c
   DEVICE_VENDOR := FriendlyARM
@@ -152,4 +152,4 @@ define Device/friendlyarm_nanopi-r5c
   IMAGE/sysupgrade.img.gz := boot-common | boot-script rk356x | pine64-img | gzip | append-metadata
   DEVICE_PACKAGES := kmod-r8125
 endef
-#TARGET_DEVICES += friendlyarm_nanopi-r5c
+TARGET_DEVICES += friendlyarm_nanopi-r5c
